@@ -8,7 +8,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
-> > **A true autonomous multi-agent AI framework where specialized agents collaborate to plan, architect, build, test, debug, review, and continuously improve software until the objective is achieved.**
+> > > **A true autonomous multi-agent AI framework where specialized agents collaborate to plan, architect, build, test, debug, review, and continuously improve software until the objective is achieved.**
 
 LoopForge demonstrates how multiple AI-driven workflows can collaborate to solve complex engineering tasks with minimal human intervention. Instead of stopping after generating code, it verifies its own work, detects failures, applies fixes, and retries until the project succeeds.
 
@@ -33,39 +33,33 @@ LoopForge demonstrates how multiple AI-driven workflows can collaborate to solve
 ## 🔥 Multi-Agent Workflow
 
 ```text
+                    ## 🏛️ Architecture
+
+```text
                     User Goal
-                        │
-                        ▼
-              🧠 Planner Agent
-                        │
-                        ▼
-             🏗️ Architect Agent
-                        │
-                        ▼
-               💻 Code Agent
-                        │
-                        ▼
-               🧪 Test Agent
-                        │
-                        ▼
-            ⚙️ Executor Agent
-                        │
-                ┌───────┴────────┐
-                │                │
-                ▼                ▼
-          Tests Pass        Tests Fail
-                │                │
-                ▼                ▼
-       🔍 Reviewer Agent   🔧 Debugger Agent
-                │                │
-                │                └─────────────┐
-                │                              │
-                └──────────────┬───────────────┘
-                               ▼
-                     📝 Reporter Agent
-                               │
-                               ▼
-                      Final Verified Output
+                         │
+                         ▼
+              Workflow Engine / Orchestrator
+                         │
+                         ▼
+                  🧠 Planner Agent
+                         ▼
+                🏗️ Architect Agent
+                         ▼
+                   💻 Code Agent
+                         ▼
+                   🧪 Test Agent
+                         ▼
+                ⚙️ Executor Agent
+                         │
+                 ┌───────┴────────┐
+                 │                │
+                 ▼                ▼
+          🔍 Reviewer Agent   🔧 Debugger Agent
+                 │                │
+                 └───────┬────────┘
+                         ▼
+                  📝 Reporter Agent
 ```
 
 ---
@@ -95,14 +89,15 @@ Example prompt:
 
 ```text
 LoopForge/
-│
 ├── agents/
+├── orchestrator/
 ├── core/
-├── tools/
 ├── memory/
-├── generated_apps/
+├── tools/
+├── assets/
 ├── main.py
 ├── requirements.txt
+├── LICENSE
 └── README.md
 ```
 
@@ -163,9 +158,8 @@ python main.py
 You can choose between:
 
 ```
-1. Agent Loop
-2. Auto Software Engineer
-3. True Multi-Agent Engineer
+1. True Multi-Agent Engineer
+
 ```
 
 ---
@@ -212,7 +206,7 @@ Execution report generated successfully.
 Each execution creates a report similar to:
 
 ```
-generated_apps/dynamic_app/loopforge_report.md
+generated_apps/multi_agent_app/loopforge_report.md
 ```
 
 The report includes:
@@ -227,25 +221,41 @@ The report includes:
 
 ## 🛣️ Roadmap
 
-## 🛣️ Roadmap
+* [x] True multi-agent workflow engine
+* [x] Planner Agent
+* [x] Architect Agent
+* [x] Code Agent
+* [x] Test Agent
+* [x] Executor Agent
+* [x] Debugger Agent
+* [x] Reviewer Agent
+* [x] Reporter Agent
+* [x] Autonomous self-healing execution loop
+* [x] Automatic execution report generation
+* [x] End-to-end software generation from natural language
+* [ ] Shared agent context and memory
+* [ ] Persistent execution history
+* [ ] Workflow router for multiple engineering domains
+* [ ] Docker sandbox for secure code execution
+* [ ] Git and GitHub integration
+* [ ] CI/CD pipeline generation
+* [ ] Terraform and infrastructure automation
+* [ ] Kubernetes deployment workflows
+* [ ] Multi-language code generation
+* [ ] Autonomous pull request creation and code review
 
-- [x] Multi-agent orchestration
-- [x] Planner Agent
-- [x] Architect Agent
-- [x] Code Agent
-- [x] Test Agent
-- [x] Executor Agent
-- [x] Debugger Agent
-- [x] Reviewer Agent
-- [x] Reporter Agent
-- [x] Autonomous self-healing loop
-- [ ] Shared agent memory
-- [ ] Long-term semantic memory
-- [ ] Docker sandbox execution
-- [ ] Git integration
-- [ ] CI/CD generation
-- [ ] Multi-language project generation
-- [ ] Autonomous pull request creation
+
+---
+
+## ⭐ Vision
+
+LoopForge is being built as an open framework for autonomous software engineering and agentic workflows. The long-term goal is to enable AI systems that don't just generate code they plan, verify, debug, iterate, and continuously improve until the task is complete.
+
+---
+
+## ⚠️ Project Status
+
+LoopForge is an actively evolving open-source project and a research prototype for autonomous software engineering. Features and workflows are continuously being improved as the framework evolves.
 
 ---
 
@@ -253,14 +263,6 @@ The report includes:
 
 Contributions, ideas, and feedback are welcome. Feel free to open an issue or submit a pull request.
 
----
-
 ## 📜 License
 
 This project is released under the MIT License.
-
----
-
-## ⭐ Vision
-
-LoopForge is being built as an open framework for autonomous software engineering and agentic workflows. The long-term goal is to enable AI systems that don't just generate code they plan, verify, debug, iterate, and continuously improve until the task is complete.
