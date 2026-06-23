@@ -1,5 +1,6 @@
-# Virtual environment
+# Virtual environments
 .venv/
+venv/
 
 # Environment variables
 .env
@@ -7,14 +8,25 @@
 # Python cache
 __pycache__/
 *.py[cod]
+*.pyo
 
-# IDE
+# Test/cache artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDEs
 .vscode/
+.idea/
 
 # OS files
 .DS_Store
+Thumbs.db
 
 # Build artifacts
-dist/
 build/
+dist/
 *.egg-info/
+
+# Runtime-generated applications and reports
+generated_apps/
