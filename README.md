@@ -2,12 +2,6 @@
   <img src="assets/banner.png" alt="LoopForge Banner" width="100%">
 </p>
 
-<h1 align="center">🚀 LoopForge</h1>
-
-<p align="center">
-  <b>An autonomous AI framework that plans, builds, tests, debugs, self-corrects, and iterates until the task is complete.</b>
-</p>
-
 # 🚀 LoopForge
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
