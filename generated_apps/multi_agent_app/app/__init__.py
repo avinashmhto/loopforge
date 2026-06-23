@@ -1,0 +1,1 @@
+"""Notes REST application package."""

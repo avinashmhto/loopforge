@@ -8,7 +8,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
-> **An autonomous AI framework that plans, builds, tests, debugs, self-corrects, and iterates until the task is successfully completed.**
+> > **A true autonomous multi-agent AI framework where specialized agents collaborate to plan, architect, build, test, debug, review, and continuously improve software until the objective is achieved.**
 
 LoopForge demonstrates how multiple AI-driven workflows can collaborate to solve complex engineering tasks with minimal human intervention. Instead of stopping after generating code, it verifies its own work, detects failures, applies fixes, and retries until the project succeeds.
 
@@ -16,50 +16,56 @@ LoopForge demonstrates how multiple AI-driven workflows can collaborate to solve
 
 ## ✨ Features
 
-* 🧠 AI-powered software generation from a single prompt
-* 🔄 Autonomous execution loop with iterative improvement
-* 🧪 Automatic test generation and execution using `pytest`
-* 🐞 Self-healing workflow that analyzes failures and fixes code
-* 📄 Execution report generation for every run
-* 📁 Dynamic project scaffolding using FastAPI
-* 🔧 Modular architecture designed for future agent expansion
-
+* 🤖 True multi-agent architecture with specialized AI agents
+* 🧠 Planner Agent for execution planning
+* 🏗️ Architect Agent for project structure design
+* 💻 Code Agent for implementation generation
+* 🧪 Test Agent for automatic pytest creation
+* ⚙️ Executor Agent for automated validation
+* 🔧 Debugger Agent for autonomous issue resolution
+* 🔍 Reviewer Agent for quality verification
+* 📝 Reporter Agent for execution summaries
+* 🔄 Iterative self-healing loop until success
+* 📄 Automatic execution report generation
+* 🚀 End-to-end software engineering from a single prompt
 ---
 
-## 🔥 Example Workflow
+## 🔥 Multi-Agent Workflow
 
 ```text
-User Prompt
-      │
-      ▼
-Generate Project
-      │
-      ▼
-Write Source Files
-      │
-      ▼
-Run Tests
-      │
-      ▼
-Tests Failed?
- ┌───────────────┐
- │      Yes      │
- ▼               │
-Analyze Errors   │
-      │          │
-      ▼          │
-Fix Code         │
-      │          │
-      └──────────┘
-           │
-           ▼
-Run Tests Again
-      │
-      ▼
-All Tests Pass
-      │
-      ▼
-Generate Execution Report
+                    User Goal
+                        │
+                        ▼
+              🧠 Planner Agent
+                        │
+                        ▼
+             🏗️ Architect Agent
+                        │
+                        ▼
+               💻 Code Agent
+                        │
+                        ▼
+               🧪 Test Agent
+                        │
+                        ▼
+            ⚙️ Executor Agent
+                        │
+                ┌───────┴────────┐
+                │                │
+                ▼                ▼
+          Tests Pass        Tests Fail
+                │                │
+                ▼                ▼
+       🔍 Reviewer Agent   🔧 Debugger Agent
+                │                │
+                │                └─────────────┐
+                │                              │
+                └──────────────┬───────────────┘
+                               ▼
+                     📝 Reporter Agent
+                               │
+                               ▼
+                      Final Verified Output
 ```
 
 ---
@@ -68,18 +74,20 @@ Generate Execution Report
 
 LoopForge can currently:
 
-* Generate FastAPI applications from natural language prompts
-* Automatically create project files
-* Generate pytest test suites
-* Execute the generated tests
-* Detect failures
-* Repair broken implementations
-* Re-run tests until successful
-* Produce a Markdown execution report
+* Coordinate multiple AI agents to solve engineering tasks
+* Plan software development before implementation
+* Design application architecture automatically
+* Generate production-ready FastAPI applications
+* Generate comprehensive pytest test suites
+* Execute tests automatically
+* Detect runtime and syntax failures
+* Autonomously debug and repair generated code
+* Re-run validation until successful
+* Produce execution reports summarizing the entire workflow
 
 Example prompt:
 
-> **Create a REST API for a bookstore with create, list, update, and delete endpoints, then generate tests and automatically fix any issues until all tests pass.**
+> **Create a notes application with REST endpoints and comprehensive pytest coverage.**
 
 ---
 
@@ -157,36 +165,44 @@ You can choose between:
 ```
 1. Agent Loop
 2. Auto Software Engineer
+3. True Multi-Agent Engineer
 ```
 
 ---
 
-## 🧪 Sample Demo
+## 🧪 Sample Multi-Agent Execution
 
 Input:
 
-```
+```text
 Create a notes application with REST endpoints and comprehensive pytest coverage.
 ```
 
-LoopForge will:
-
-* Generate the application
-* Generate tests
-* Execute pytest
-* Detect failures
-* Fix broken code
-* Re-run tests
-* Produce an execution report
-
-Typical output:
+Execution:
 
 ```
-22 tests generated
-2 tests failed
-AI fixed missing endpoint
-22 tests passed
-Execution report generated
+🧠 Planner Agent → Creates execution plan
+🏗️ Architect Agent → Designs project structure
+💻 Code Agent → Generates implementation
+🧪 Test Agent → Produces pytest suite
+⚙️ Executor Agent → Runs automated tests
+🔧 Debugger Agent → Fixes detected issues
+🔍 Reviewer Agent → Verifies final output
+📝 Reporter Agent → Generates execution report
+```
+
+Example outcome:
+
+```
+Attempt 1:
+❌ SyntaxError detected during test execution
+
+Debugger Agent repaired the project.
+
+Attempt 2:
+✅ 28/28 tests passed
+
+Execution report generated successfully.
 ```
 
 ---
@@ -211,18 +227,25 @@ The report includes:
 
 ## 🛣️ Roadmap
 
-* [x] AI project generation
-* [x] Automated test execution
-* [x] Self-healing fix loop
-* [x] Execution reporting
-* [ ] Dynamic planner agent
-* [ ] Multi-agent orchestration
-* [ ] Persistent memory
-* [ ] Git integration
-* [ ] Docker execution sandbox
-* [ ] CI/CD pipeline generation
-* [ ] Autonomous code reviews
-* [ ] Multi-language project support
+## 🛣️ Roadmap
+
+- [x] Multi-agent orchestration
+- [x] Planner Agent
+- [x] Architect Agent
+- [x] Code Agent
+- [x] Test Agent
+- [x] Executor Agent
+- [x] Debugger Agent
+- [x] Reviewer Agent
+- [x] Reporter Agent
+- [x] Autonomous self-healing loop
+- [ ] Shared agent memory
+- [ ] Long-term semantic memory
+- [ ] Docker sandbox execution
+- [ ] Git integration
+- [ ] CI/CD generation
+- [ ] Multi-language project generation
+- [ ] Autonomous pull request creation
 
 ---
 

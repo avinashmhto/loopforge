@@ -1,4 +1,5 @@
 from core.llm import call_llm
+from core.json_utils import extract_json
 
 
 def planner_agent(state):
@@ -20,3 +21,33 @@ Return practical steps only.
     )
 
     return state
+
+
+def engineering_planner_agent(user_goal: str) -> dict:
+    prompt = f"""
+You are the Planner Agent in LoopForge.
+
+Break this user goal into a practical software engineering plan.
+
+User goal:
+{user_goal}
+
+Return ONLY valid JSON.
+
+Format:
+{{
+  "summary": "short plan summary",
+  "steps": [
+    "step 1",
+    "step 2",
+    "step 3"
+  ]
+}}
+"""
+
+    raw = call_llm(
+        "You are a Planner Agent. You create execution plans for software engineering tasks.",
+        prompt,
+    )
+
+    return extract_json(raw)
