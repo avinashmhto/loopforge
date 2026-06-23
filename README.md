@@ -32,8 +32,7 @@ LoopForge demonstrates how multiple AI-driven workflows can collaborate to solve
 
 ## 🔥 Multi-Agent Workflow
 
-```text
-                    ## 🏛️ Architecture
+## 🏛️ Architecture
 
 ```text
                     User Goal
@@ -43,23 +42,30 @@ LoopForge demonstrates how multiple AI-driven workflows can collaborate to solve
                          │
                          ▼
                   🧠 Planner Agent
+                         │
                          ▼
                 🏗️ Architect Agent
+                         │
                          ▼
                    💻 Code Agent
+                         │
                          ▼
                    🧪 Test Agent
+                         │
                          ▼
                 ⚙️ Executor Agent
                          │
                  ┌───────┴────────┐
                  │                │
                  ▼                ▼
-          🔍 Reviewer Agent   🔧 Debugger Agent
+         🔧 Debugger Agent   🔍 Reviewer Agent
                  │                │
                  └───────┬────────┘
                          ▼
                   📝 Reporter Agent
+                         │
+                         ▼
+                  Final Verified Output
 ```
 
 ---
