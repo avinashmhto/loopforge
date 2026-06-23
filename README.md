@@ -8,7 +8,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
-> > > **A true autonomous multi-agent AI framework where specialized agents collaborate to plan, architect, build, test, debug, review, and continuously improve software until the objective is achieved.**
+> **A true autonomous multi-agent AI framework where specialized agents collaborate to plan, architect, build, test, debug, review, and continuously improve software until the objective is achieved.**
 
 LoopForge demonstrates how multiple AI-driven workflows can collaborate to solve complex engineering tasks with minimal human intervention. Instead of stopping after generating code, it verifies its own work, detects failures, applies fixes, and retries until the project succeeds.
 
